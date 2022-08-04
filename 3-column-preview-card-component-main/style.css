@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    margin: 10px auto;
+    height: 100vh;
+    width: 70%;
+    /* padding: 200px; */
+}
+.container p{
+    font-family: 'Lexend Deca', sans-serif;
+}
+.container h2{
+    font-family: 'Big Shoulders Display', sans-serif ;
+    text-transform: uppercase;
+    margin: 20px;
+}
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: center;
+    height: 70vh;
+    width: 300px;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+
+.sedans button{
+    background-color: white;
+    color: hsl(31, 77%, 52%);
+    width: 100px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 10rem;
+    
+}
+button:hover{
+    color: white;
+    background-color: transparent;
+    border: 1px white solid;
+    transition: all 0.5s ease-in;
+}
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+    justify-content: center;
+    height: 70vh;
+    padding: 20px;
+    width: 300px;
+}
+
+
+.suvs button{
+    background-color: white;
+    color: hsl(184, 100%, 22%);
+    width: 100px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 9rem;
+    font-family: inherit;
+    
+}
+.suvs button:hover{
+    color: white;
+    background-color: transparent;
+    border: 1px white solid;
+    transition: all 0.5s ease-in;
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    height: 70vh;
+    padding: 20px;
+    width: 300px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.luxury button{
+    background-color: white;
+    color: hsl(179, 100%, 13%);
+    width: 100px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 10rem;
+    font-family: inherit;
+}
+
+.luxury button:hover{
+    color: white;
+    background-color: transparent;
+    border: 1px white solid;
+    transition: all 0.5s ease-in;
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        /* margin: 0 auto; */
+        height: 230vh;
+        width: 70%;
+    }
+    .sedans{
+        height: 50vh;
+        border-top-right-radius: 10px;
+    }
+    .suvs{
+        transform: translateY(-.4rem);
+        height: 50vh;
+       
+    }
+
+    .luxury{
+        transform: translateY(-0.9rem);
+        border-top-right-radius: 0px ;
+        height: 50vh;
+        border-bottom-left-radius: 10px;
+    }
+}
